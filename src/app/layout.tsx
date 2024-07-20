@@ -16,10 +16,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark:bg-black bg-white">
-      <div>
-       <title>PortFolio | Yash Goyal</title>
        <link rel="icon" href="/assessts/yashLogo.png" />
-       </div>
+      <title>PortFolio | Yash Goyal</title>
       <body className={inter.className}>
         {children}
         <Toaster /> 
