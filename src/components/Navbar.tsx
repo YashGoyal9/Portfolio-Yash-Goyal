@@ -4,7 +4,7 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
 import { cn } from "@/lib/utils";
 import { Button } from "./ui/moving-border";
 import Link from "next/link";
-
+import Image from "next/image";
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
 
@@ -15,10 +15,14 @@ function Navbar({ className }: { className?: string }) {
 
       <div className="flex flex-col md:flex-row items-center md:gap-28 gap-3  ">
       <div className="flex items-start justify-start p-1">
-          <img src="/assessts/yashLogo.png" alt="Yash Logo" 
+
+          <Image
+           src="/assessts/yashLogo.png"
            height="70"
             width="70"
-          className="h-30 cursor-pointer" /> 
+          className="h-30 cursor-pointer"
+          alt="Yash Logo" 
+           /> 
         </div>
     <div className="flex gap-7 text-xl ">
         <MenuItem setActive={setActive} active={active} item="About">
