@@ -5,6 +5,7 @@ import mateSC from "@/fonts/MateScFont";
 import { FlipWords } from "./ui/flip-words"; 
 import { Button } from "./ui/moving-border";
 import Link from "next/link";
+import Image from "next/image";
 
 import { BackgroundGradient } from "./ui/background-gradient";
 
@@ -18,7 +19,7 @@ export function Background() {
       <div className="max-w-2xl   lg:pt-[295px] pt-[270px] pb-[100px] ">
         <p className="relative z-10  text-2xl md:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  
         text-center font-sans font-bold">
-          Hi! I'am
+          Hi! I&apos;m
         </p>
         <h1 className="relative z-10 text-5xl md:text-7xl  bg-clip-text text-transparent bg-[#e6dbc9] 
         text-center font-sans font-bold">
@@ -39,7 +40,7 @@ export function Background() {
         <p className="text-[#DFDCE3] max-w-lg mx-auto my-2 md:text-[16px] text-[13px] text-center relative z-10">
         I am  a passionate Software Developer. I specialize in web development and enjoy building responsive,
          user-friendly websites and applications. My journey in software development is driven by a love for problem-solving
-          and continuous learning. When I'm not coding, I enjoy exploring new technologies and improving my skills. Have a look on my
+          and continuous learning. When I&apos;m not coding, I enjoy exploring new technologies and improving my skills. Have a look on my
            portfolio website.
         </p>
         <br />
@@ -56,12 +57,12 @@ export function Background() {
       </div>
       <div className="pb-[70px]">
       <BackgroundGradient className="rounded-[22px] max-w-sm p-3  bg-zinc-900">
-        <img
+      <Image
             src="/assessts/me1.jpeg"
-            alt="Mr.Goyal"
             height="900"
             width="500"
             className="object-contain rounded-[22px]"
+            alt="Goyal ji"
           />
       </BackgroundGradient>
       </div>
