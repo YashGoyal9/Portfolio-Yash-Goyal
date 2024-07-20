@@ -2,8 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-// import 'react-toastify/dist/ReactToastify.css';
-
+import Head from "next/head";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -18,8 +17,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="dark:bg-black bg-white">
+       <Head>
        <title>PortFolio | Yash Goyal</title>
-        <link rel="icon" href="/assessts/yashLogo.png" />
+       <link rel="icon" href="/assessts/yashLogo.png" />
+       </Head>
       <body className={inter.className}>
         {children}
         <Toaster /> 
