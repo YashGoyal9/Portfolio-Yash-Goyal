@@ -16,7 +16,7 @@ export function Contact() {
     e.preventDefault();
 
     // Display success toast
-    toast.success('Haai! Yash This Side 🙌');
+    toast.success("Haai! Yash This Side 🙌");
 
     // Reset form fields
     setName('');
@@ -35,7 +35,7 @@ export function Contact() {
           </p>
         </h2>
         <p className="text-neutral-600 text-md max-w-full px-3 mt-2 dark:text-neutral-300">
-          Got a question or interested in collaborating? Complete the form below, and I'll respond as quickly as I can.
+          Got a question or interested in collaborating? Complete the form below, and I&apos;ll respond as quickly as I can.
         </p>
       </div>
 
