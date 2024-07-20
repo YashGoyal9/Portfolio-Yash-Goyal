@@ -64,7 +64,7 @@ export const projects = [
   {
     title: "TypeScript", 
     // daalna baaki h link yha 
-    link: "https://microsoft.com",
+    link: "https://github.com/YashGoyal9/Portfolio-Yash-Goyal",
     icon:<SiTypescript className="h-20 w-20 dark:text-white text-black"/>,
   },
   {
