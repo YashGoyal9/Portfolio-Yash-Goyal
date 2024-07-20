@@ -68,7 +68,7 @@ const CARDS = [
     designation: "The Ideal Man",
     content: (
       <Highlight>
-      Don't Give up in any situation.
+      Don&apos;t Give up in any situation.
       </Highlight>
     ),
   },
