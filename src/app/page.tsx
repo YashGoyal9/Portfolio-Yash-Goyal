@@ -1,3 +1,5 @@
+
+
 import { Background } from "@/components/Background";
 import Navbar from "@/components/Navbar";
 import { TechStack } from "@/components/TechStack";
@@ -8,33 +10,36 @@ import { QuotesLinks } from "@/components/QuotesLinks";
 import { Contact } from "@/components/Contact";
 import { Footer } from "@/components/Footer";
 
+
 export default function Home() {
   return (
-    <div>
-      <div><Navbar/></div>
+    <div className="space-y-12 overflow-x-hidden">
       <div>
-        <Background/>
+        <Navbar />
       </div>
       <div>
-        <TechStack/>
+        <Background />
       </div>
       <div>
-        <Skills/>
+        <TechStack />
       </div>
       <div>
-        <Projects/>
+        <Skills />
       </div>
       <div>
-        <Interests/>
+        <Projects />
       </div>
       <div>
-        <QuotesLinks/>
+        <Interests />
       </div>
       <div>
-        <Contact/>
+        <QuotesLinks />
       </div>
       <div>
-      <Footer/>
+        <Contact />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
