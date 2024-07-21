@@ -47,7 +47,7 @@ export const MenuItem = ({
               >
                 <motion.div
                   layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
+                  className="w-max h-full p-4 "
                 >
                   {children}
                 </motion.div>
@@ -70,7 +70,7 @@ export const Menu = ({
   return (
     <nav
       onMouseLeave={() => setActive(null)} // resets the state
-      className="relative rounded-full dark:border-0   border-neutral-200 border-2 dark:bg-white dark:border-black/[0.2] bg-black shadow-input flex justify-center space-x-4 px-8 py-6 "
+      className="relative rounded-full dark:border-0   border-neutral-200 border-2 dark:bg-white dark:border-black/[0.2] bg-black shadow-input flex md:justify-center sm:w-full w-[15rem] justify-start space-x-4 pl-11 md:px-8 pt-3 pb-4 "
     >
       {children}
     </nav>
@@ -89,7 +89,7 @@ export const ProductItem = ({
   src: string;
 }) => {
   return (
-    <Link href={href} className="flex space-x-2 ">
+    <Link href={href} className="flex space-x-2 justify-around sm:justify-start ">
       <Image
         src={src}
         width={140}
