@@ -15,6 +15,12 @@ export function Contact() {
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
 
+    // Basic validation
+    if (!name || !email || !message) {
+      toast.error("Please fill in all fields.");
+      return;
+    }
+
     // Display success toast
     toast.success("Haai! Yash This Side 🙌");
 
@@ -28,7 +34,7 @@ export function Contact() {
 
   return (
     <div className="ml-5">
-      <div className="flex flex-col justify-center gap-2 items-center ">
+      <div className="flex flex-col justify-center gap-2 items-center">
         <h2 className="font-bold text-6xl text-neutral-800 dark:text-neutral-200">
           <p className={mateSC.className}>
             Say Hello 👋🏽
@@ -51,9 +57,10 @@ export function Contact() {
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
+                  aria-required="true"
                 />
               </LabelInputContainer>
-              <LabelInputContainer className="mb-4">
+              <LabelInputContainer>
                 <Label htmlFor="email">Email Address</Label>
                 <Input
                   id="email"
@@ -61,11 +68,12 @@ export function Contact() {
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
+                  aria-required="true"
                 />
               </LabelInputContainer>
             </div>
             <div>
-              <LabelInputContainer className="mb-4">
+              <LabelInputContainer>
                 <Label htmlFor="message">Message</Label>
                 <Input
                   id="message"
@@ -74,6 +82,7 @@ export function Contact() {
                   className="pt-4 pb-40"
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
+                  aria-required="true"
                 />
               </LabelInputContainer>
             </div>
