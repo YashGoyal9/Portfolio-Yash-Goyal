@@ -3,41 +3,42 @@ import { CardStack } from "./ui/card-stack";
 import { cn } from "@/lib/utils";
 import { LinkPreview } from "@/components/ui/link-preview";
 
-
 export function QuotesLinks() {
   return (
-   <div className="flex md:flex-row flex-col  justify-center items-center ">
-     <div className="h-[28rem] flex mr-20 items-center justify-center w-[50%]">
-      <CardStack items={CARDS} />
-      
+    <div className="flex flex-col md:flex-row justify-center items-center px-4 md:px-8">
+      <div className="flex items-center justify-center w-full md:w-1/2 h-auto md:h-[28rem] mb-8 md:mb-0">
+        <CardStack items={CARDS} />
+      </div>
+
+      <div className="flex flex-col justify-center items-center w-full md:w-1/2 h-auto md:h-[28rem] px-4">
+        <p className="text-neutral-600 dark:text-neutral-400 text-xl md:text-2xl lg:text-3xl max-w-3xl mx-auto mb-10 text-center">
+          Discover my work on{" "}
+          <LinkPreview
+            url="https://github.com/YashGoyal9"
+            className="font-bold"
+            aria-label="Visit my GitHub profile"
+          >
+            Github
+          </LinkPreview>{" "}
+          , follow my updates on{" "}
+          <LinkPreview
+            url="https://www.instagram.com/____yash_goyal?igsh=MTE4dzBsNmRlNTU4bw=="
+            className="font-bold"
+            aria-label="Visit my Instagram profile"
+          >
+            Instagram
+          </LinkPreview>{" "}
+          , connect professionally on{" "}
+          <LinkPreview
+            url="https://www.linkedin.com/in/yashgoyal09"
+            className="font-bold"
+            aria-label="Visit my LinkedIn profile"
+          >
+            Linkedin
+          </LinkPreview>.
+        </p>
+      </div>
     </div>
-
-    <div className="flex justify-center items-center md:h-[28rem] h-[15rem] flex-col px-4 w-[70%] md:w-[50%]">
-      <p className="text-neutral-600 dark:text-neutral-400 text-xl md:text-3xl max-w-3xl mx-auto mb-10">
-      Discover my work on {" "}
-        <LinkPreview url="https://github.com/YashGoyal9" className="font-bold">
-         Github
-        </LinkPreview>{" "}
-        , follow my updates on {" "}
-        <LinkPreview url="https://www.instagram.com/____yash_goyal?igsh=MTE4dzBsNmRlNTU4bw==" className="font-bold">
-          Instagram
-        </LinkPreview>{" "}
-        , connect professionally on
-        {" "}
-        <LinkPreview url="https://www.linkedin.com/in/yashgoyal09" className="font-bold">
-          Linkedin
-        </LinkPreview>.
-        {/* {" "} */}
-        {/* , and check my competitive programming on
-        {" "}
-        <LinkPreview url="https://framer.com/motion" className="font-bold">
-          Codeforces
-        </LinkPreview> */}
-      </p>
-    </div>
-
-
-   </div>
   );
 }
 
@@ -68,7 +69,7 @@ const CARDS = [
     designation: "The Ideal Man",
     content: (
       <Highlight>
-      Don&apos;t Give up in any situation.
+        Don&apos;t Give up in any situation.
       </Highlight>
     ),
   },
@@ -78,7 +79,7 @@ const CARDS = [
     designation: "Lord of the Universe",
     content: (
       <p>
-      <Highlight>Everything Happened for Reasons. </Highlight> 
+        <Highlight>Everything Happened for Reasons.</Highlight>
       </p>
     ),
   },
@@ -88,7 +89,7 @@ const CARDS = [
     designation: "Great Warrior",
     content: (
       <p>
-       <Highlight>Be Humble when you achieve anything or everything. </Highlight> 
+        <Highlight>Be Humble when you achieve anything or everything.</Highlight>
       </p>
     ),
   },
@@ -98,7 +99,7 @@ const CARDS = [
     designation: "The Roarer",
     content: (
       <p>
-       <Highlight>Self control is the key to live life to the fullest. </Highlight> 
+        <Highlight>Self control is the key to live life to the fullest.</Highlight>
       </p>
     ),
   },
@@ -108,7 +109,7 @@ const CARDS = [
     designation: "The Infinite",
     content: (
       <p>
-       <Highlight>Never stop doing good things for others.</Highlight> 
+        <Highlight>Never stop doing good things for others.</Highlight>
       </p>
     ),
   },
